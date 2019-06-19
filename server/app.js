@@ -25,7 +25,7 @@ app.use(express.static(`${__dirname}/../public/dist`));
 //     );
 // }
 
-app.use("/MoreHomes", proxy("http://3.19.54.230:3005/MoreHomes"));
+app.use("/MoreHomes", proxy("http://3.19.54.230:3005"));
 
 app.listen(PORT, () => {
   console.log("Proxy listening on port " + PORT);
